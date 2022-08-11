@@ -1,0 +1,103 @@
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;700&display=swap");
+@import "./helpStyles/reset";
+@import "./helpStyles/variables";
+
+body {
+  background-color: $background;
+}
+
+// mobile first 320px
+
+.product-card {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 280px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+}
+.product-card__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.product-card__image {
+  img {
+    width: 280px;
+    height: 180px;
+    object-fit: cover;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+  }
+}
+.product-card__content {
+  padding: 15px 18px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  background-color: #fff;
+}
+.product-card__type {
+  color: $text;
+  letter-spacing: 3px;
+  margin-bottom: 10px;
+}
+.product-card__title {
+  width: 200px;
+  margin-bottom: 10px;
+  font-family: "Fraunces", serif;
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 26px;
+}
+.product-card__text {
+  min-width: 240px;
+  margin-bottom: 10px;
+  font-size: 12px;
+  line-height: 18px;
+  color: $text;
+}
+.product-card__prize {
+  margin-bottom: 12px;
+  display: flex;
+  align-items: center;
+  column-gap: 20px;
+}
+.product-card__prize-actualy {
+  font-family: "Fraunces", serif;
+  font-size: 22px;
+  font-weight: 700;
+  color: $Darkcyan;
+}
+.product-card__prize-not {
+  color: $text;
+  text-decoration: line-through;
+}
+
+.product-card__link {
+  display: block;
+  padding: 15px;
+  border-radius: 10px;
+  background-color: $Darkcyan;
+  text-align: center;
+  font-weight: 700;
+  color: #fff;
+}
+
+.product-card__link-text {
+  position: relative;
+  padding-left: 26px;
+  &::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 17px;
+    height: 17px;
+    background: url("../images/icon-cart.svg") no-repeat;
+    background-size: contain;
+  }
+}
+
+@import "./media";

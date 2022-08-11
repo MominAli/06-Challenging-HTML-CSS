@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" href="./images/favicon-32x32.png">
+  <title>product-card component</title>
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+
+  <div class="product-card">
+    <div class="product-card__container">
+
+      <div class="product-card__image">
+        <picture>
+          <source srcset="./images/image-product-desktop.jpg" media="(min-width: 768px)">
+          <img src="./images/image-product-mobile.jpg" alt="">
+        </picture>
+      </div>
+
+      <div class="product-card__content">
+        <div class="product-card__type">PERFUME</div>
+        <div class="product-card__title">
+          Gabrielle Essence
+          Eau De Parfum
+        </div>
+        <p class="product-card__text">
+          A floral, solar and voluptous
+          interpretation composed by Olivier
+          Polge, Perfumer-Creator for the House of CHANEL.
+        </p>
+        <div class="product-card__prize">
+          <span class="product-card__prize-actualy">$149.99</span>
+          <span class="product-card__prize-not">$169.99</span>
+        </div>
+        <a class="product-card__link" href="#!">
+          <span class="product-card__link-text">Add to card</span>
+        </a>
+      </div>
+
+    </div>
+  </div>
+
+</body>
+
+</html>

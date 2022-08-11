@@ -1,0 +1,105 @@
+@media (min-width: 375px) {
+  .product-card {
+    width: 350px;
+  }
+  .product-card__image {
+    img {
+      width: 350px;
+      height: 250px;
+    }
+  }
+  .product-card__content {
+    padding: 28px;
+  }
+  .product-card__type {
+    margin-bottom: 20px;
+  }
+  .product-card__title {
+    width: 240px;
+    margin-bottom: 28px;
+    font-size: 26px;
+    line-height: 28px;
+  }
+  .product-card__text {
+    margin-bottom: 35px;
+    font-size: 14px;
+    line-height: 20px;
+  }
+  .product-card__prize {
+    margin-bottom: 25px;
+  }
+  .product-card__prize-actualy {
+    font-size: 28px;
+  }
+}
+@media (min-width: 768px) {
+  .product-card {
+    width: 600px;
+  }
+
+  .product-card__container {
+    flex-direction: row;
+    align-items: stretch;
+  }
+
+  .product-card__image {
+    flex: 1 0 50%;
+    position: relative;
+    padding-bottom: 40%;
+    img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border-top-left-radius: 10px;
+      border-top-right-radius: 0px;
+      border-bottom-left-radius: 10px;
+    }
+  }
+
+  .product-card__content {
+    flex: 1 0 50%;
+    padding: 36px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 10px;
+    background-color: #fff;
+  }
+
+  .product-card__type {
+    letter-spacing: 4px;
+    margin-bottom: 25px;
+  }
+
+  .product-card__title {
+    margin-bottom: 35px;
+    font-size: 32px;
+    line-height: 36px;
+  }
+
+  .product-card__text {
+    min-width: 240px;
+    margin-bottom: 36px;
+  }
+
+  .product-card__prize {
+    margin-bottom: 34px;
+    column-gap: 20px;
+  }
+
+  .product-card__prize-actualy {
+    font-size: 34px;
+  }
+
+  .product-card__link {
+    padding: 17px;
+    transition: all 0.2s ease 0s;
+    &:hover {
+      background-color: hsl(158, 69%, 24%);
+    }
+    &:active {
+      transform: scale(0.96);
+    }
+  }
+}

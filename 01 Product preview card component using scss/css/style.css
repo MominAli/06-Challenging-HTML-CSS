@@ -1,0 +1,321 @@
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;700&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+:focus,
+:active {
+  outline: none;
+}
+
+a:focus,
+a:active {
+  outline: none;
+}
+
+nav,
+footer,
+header,
+aside {
+  display: block;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+}
+
+input,
+button,
+textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  background-color: transparent;
+  color: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a,
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+a {
+  font-weight: inherit;
+  color: inherit;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: 400;
+}
+
+body {
+  background-color: #f2ebe3;
+}
+
+.product-card {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 280px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+}
+
+.product-card__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.product-card__image img {
+  width: 280px;
+  height: 180px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.product-card__content {
+  padding: 15px 18px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  background-color: #fff;
+}
+
+.product-card__type {
+  color: #6c7289;
+  letter-spacing: 3px;
+  margin-bottom: 10px;
+}
+
+.product-card__title {
+  width: 200px;
+  margin-bottom: 10px;
+  font-family: "Fraunces", serif;
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 26px;
+}
+
+.product-card__text {
+  min-width: 240px;
+  margin-bottom: 10px;
+  font-size: 12px;
+  line-height: 18px;
+  color: #6c7289;
+}
+
+.product-card__prize {
+  margin-bottom: 12px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-column-gap: 20px;
+          column-gap: 20px;
+}
+
+.product-card__prize-actualy {
+  font-family: "Fraunces", serif;
+  font-size: 22px;
+  font-weight: 700;
+  color: #3c8067;
+}
+
+.product-card__prize-not {
+  color: #6c7289;
+  text-decoration: line-through;
+}
+
+.product-card__link {
+  display: block;
+  padding: 15px;
+  border-radius: 10px;
+  background-color: #3c8067;
+  text-align: center;
+  font-weight: 700;
+  color: #fff;
+}
+
+.product-card__link-text {
+  position: relative;
+  padding-left: 26px;
+}
+
+.product-card__link-text::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  width: 17px;
+  height: 17px;
+  background: url("../images/icon-cart.svg") no-repeat;
+  background-size: contain;
+}
+
+@media (min-width: 375px) {
+  .product-card {
+    width: 350px;
+  }
+  .product-card__image img {
+    width: 350px;
+    height: 250px;
+  }
+  .product-card__content {
+    padding: 28px;
+  }
+  .product-card__type {
+    margin-bottom: 20px;
+  }
+  .product-card__title {
+    width: 240px;
+    margin-bottom: 28px;
+    font-size: 26px;
+    line-height: 28px;
+  }
+  .product-card__text {
+    margin-bottom: 35px;
+    font-size: 14px;
+    line-height: 20px;
+  }
+  .product-card__prize {
+    margin-bottom: 25px;
+  }
+  .product-card__prize-actualy {
+    font-size: 28px;
+  }
+}
+
+@media (min-width: 768px) {
+  .product-card {
+    width: 600px;
+  }
+  .product-card__container {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: stretch;
+        -ms-flex-align: stretch;
+            align-items: stretch;
+  }
+  .product-card__image {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 0 50%;
+            flex: 1 0 50%;
+    position: relative;
+    padding-bottom: 40%;
+  }
+  .product-card__image img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 10px;
+  }
+  .product-card__content {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 0 50%;
+            flex: 1 0 50%;
+    padding: 36px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 10px;
+    background-color: #fff;
+  }
+  .product-card__type {
+    letter-spacing: 4px;
+    margin-bottom: 25px;
+  }
+  .product-card__title {
+    margin-bottom: 35px;
+    font-size: 32px;
+    line-height: 36px;
+  }
+  .product-card__text {
+    min-width: 240px;
+    margin-bottom: 36px;
+  }
+  .product-card__prize {
+    margin-bottom: 34px;
+    -webkit-column-gap: 20px;
+            column-gap: 20px;
+  }
+  .product-card__prize-actualy {
+    font-size: 34px;
+  }
+  .product-card__link {
+    padding: 17px;
+    -webkit-transition: all 0.2s ease 0s;
+    transition: all 0.2s ease 0s;
+  }
+  .product-card__link:hover {
+    background-color: #136748;
+  }
+  .product-card__link:active {
+    -webkit-transform: scale(0.96);
+            transform: scale(0.96);
+  }
+}
